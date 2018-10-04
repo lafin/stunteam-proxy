@@ -1,0 +1,21 @@
+{
+  "extends": [
+    "tslint:recommended",
+    "tslint-eslint-rules"
+  ],
+  "linterOptions": {
+      "exclude": [
+          "**/*.json",
+          "node_modules/**"
+      ]
+  },
+  "rules": {
+    "ordered-imports": [true, {
+      "grouped-imports": true
+    }],
+    "no-inferrable-types": true,
+    "semicolon": [true, "always", "ignore-interfaces"],
+    "max-line-length": [true, 160],
+    "variable-name": false
+  }
+}
